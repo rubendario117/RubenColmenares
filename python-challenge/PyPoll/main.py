@@ -59,7 +59,12 @@ results_table
 #Format into %
 percentages = results_table["Candidate"]/votes*100
 results_table["Votes(%)"] = percentages
-#results_table["Votes(%)"] = pd.Series([round(val, 2) for val in results_table["Votes(%)"]], index = results_table.index)
+
+results_table.style.format({
+    'Candidate': '{:,.2f}'.format,
+    'Votes(%)': '{:,.2%}'.format,
+})
+
 
 results_table
 
@@ -96,7 +101,7 @@ winner_candidate = list(results_table.index[results_table["Candidate"]==winner])
 winner_candidate
 
 
-# In[ ]:
+# In[14]:
 
 
 #Final Print
