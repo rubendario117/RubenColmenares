@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Latitude - Latitude Analysis</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+    crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <a class="navbar-brand" href="index.html">Weather Changes Visualization Dashboard</a>
+            </div>
+
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="dropdown-menu">
+                    <li><a href="lat_temp.html">Latitude vs. Max Temperature</a></li>
+                    <li><a href="lat_hum.html">Latitude vs. Humidity</a></li>
+                    <li><a href="lat_cloud.html">Latitude vs. Cloudiness</a></li>
+                    <li><a href="lat_wind.html">Latitude vs. Wind Speed</a></li>
+                </ul>
+            </div>
+        
+            <li>
+                <a class="nav-link" href="Data.html"><span class="c-d">Data</a>
+            </li>
+        
+        </div>
+    </nav>
+
+    <div class="content">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-sm-12 col-md-8">
+                    <div class="box">
+                        <div class="page-header">
+                            <h1 class="title"> Latitude vs. Humidity </h1>
+                            <h2> Query over +500 cities</h2>
+                        </div>
+                        <div class="box">
+                            <img src="./Instructions/Resources/assets/images/Latitude_Humidity.png" alt="Latitude vs. Humidity" class="img-responsive">
+                            <p class="category"> We can osberve the humidity changing based on its latitude.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-12 col-md-4">
+                    <div class="box">
+                        <div class="page-header">
+                            <h1 class="title">Visualizations</h1>
+                        </div>
+                        <div class="box">
+                            <a href="lat_temp.html"><img src="./Instructions/Resources/assets/images/Latitude_Temperature.png" alt="Latitude vs. Max Temperature" height="160" width="160"></a>
+                            <a href="lat_hum.html"><img src="./Instructions/Resources/assets/images/Latitude_Humidity.png" alt="Latitude vs. Humidity" height="160" width="160"></a>
+                            <a href="lat_cloud.html"><img src="./Instructions/Resources/assets/images/Latitude_Cloudiness.png" alt="Latitude vs. Cloudiness" height="160" width="160"></a>
+                            <a href="lat_wind.html"><img src="./Instructions/Resources/assets/images/Latitude_WindSpeed.png" alt="Latitude vs. Wind Speed" height="160" width="160"></a>
+                         </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+
+</html>
